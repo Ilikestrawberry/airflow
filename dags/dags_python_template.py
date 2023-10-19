@@ -7,7 +7,7 @@ from common.common_func import python_function1
 
 
 with DAG(
-    dag_id="dags_python_with_op_args",
+    dag_id="dags_python_template",
     schedule="30 9 * * *",
     start_date=pendulum.datetime(2023, 10, 1, tz="Asia/Seoul"),
     catchup=False,
