@@ -4,7 +4,7 @@ import pendulum
 from airflow.models import Variable
 
 with DAG(
-    dag_id="dags_bash_with variable",
+    dag_id="dags_bash_with_variable",
     schedule="10 0 * * *",
     start_date=pendulum.datetime(2023, 3, 1, tz="Asia/Seoul"),
     catchup=False,
