@@ -14,7 +14,7 @@ with DAG(
 ) as dag:
 
     class CustomBranchOperator(BaseBranchOperator):
-        def choose_branch(self, context: Context) -> str | Iterable[str]:
+        def choose_branch(self, context):
             import random
 
             print(context)
